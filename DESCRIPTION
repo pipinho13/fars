@@ -1,0 +1,19 @@
+Package: fars
+Type: Package
+Title: Summarise and plot FARS data
+Version: 0.1.0
+Author: C. Thiele
+Maintainer: C. Thiele <yourself@somewhere.net>
+Description: Read in, summarise and plot data of the US National Highway 
+    Traffic Safety Administration's Fatality Analysis Reporting System.
+License: GPL
+Encoding: UTF-8
+LazyData: true
+Suggests:
+    testthat,
+    maps,
+    readr,
+    tidyr
+Depends:
+    dplyr
+RoxygenNote: 5.0.1
