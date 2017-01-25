@@ -13,7 +13,9 @@ Suggests:
     testthat,
     maps,
     readr,
-    tidyr
+    tidyr,
+    knitr,
+    rmarkdown
 Depends:
     dplyr
 RoxygenNote: 5.0.1
