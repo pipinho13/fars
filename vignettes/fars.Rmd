@@ -1,0 +1,38 @@
+---
+title: "fars"
+author: "C. Thiele"
+date: "`r Sys.Date()`"
+output: rmarkdown::html_vignette
+vignette: >
+  %\VignetteIndexEntry{fars}
+  %\VignetteEngine{knitr::rmarkdown}
+  %\VignetteEncoding{UTF-8}
+---
+
+# The fars package
+## Short introduction
+
+The fars package includes a few functions that are useful for working with data
+from the US National Highway Traffic Safety Administration's Fatality Analysis 
+Reporting System.
+
+The included functions are:
+
+- `fars_read`
+- `make_filename`
+- `fars_read_years`
+- `fars_summarize_years`
+- `fars_map_state`
+
+The functions that are of main interest are `fars_summarize_years` for 
+returning the observations per month and `fars_map_state` to plot a map of 
+a certain state (idetified by number) during a certain year.
+
+For the functions to work the package expects suitable files from the FARS 
+system in the working directory. The filenames should follow the standard 
+naming scheme as used by `make_filename`. For example:
+
+```{r, message=FALSE, warning=FALSE}
+library(fars)
+make_filename(2013)
+```

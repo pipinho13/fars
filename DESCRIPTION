@@ -19,3 +19,4 @@ Suggests:
 Depends:
     dplyr
 RoxygenNote: 5.0.1
+VignetteBuilder: knitr
